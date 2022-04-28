@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&display=swap');
+
+* {
+    font-family: 'Flamenco', cursive;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    box-shadow: 0 .125rem .25rem rgb(187,209,234, .5);
+}
+
+.logo img {
+    width: 90px;
+}
+
+.navBar ul {
+    display: flex;
+    gap: 20px;
+}
+
+.navBar ul li {
+    list-style: none;
+}
+
+.navBar ul li a:hover {
+    background-color: #3b66a2;
+    color: #fff;
+}
+
+
+.navBar ul li a {
+    padding: .5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #292F38;
+}
