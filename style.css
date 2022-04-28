@@ -13,7 +13,7 @@
     align-items: center;
     width: 100%;
     margin: auto;
-    box-shadow: 0 .125rem .25rem rgb(187,209,234, .5);
+    box-shadow: 0 .125rem .25rem rgb(187,209,234, .15);
 }
 
 .logo img {
@@ -31,6 +31,7 @@
 
 .navBar ul li a:hover {
     background-color: #3b66a2;
+    box-shadow: 0 .5rem 1rem rgba(41, 47, 56, .5);
     color: #fff;
 }
 
