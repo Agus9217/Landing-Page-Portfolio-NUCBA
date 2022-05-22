@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css");
-
+:root {
+    --bg-color: #19142a;
+    --red-color: #d5213a;
+    --white-color: #fff;
+    --violet-color: #2a2344;
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,11 +14,11 @@
 }
 
 body {
-    background-color: #19142a;
-    color: #fff;
+    background-color: var(--bg-color);
+    color: var(--white-color);
 }
 
-.header, .navBar ul, .logo, .hero {
+.header, .navBar ul, .logo, .hero, .flex-box {
     display: flex;
 }
 
@@ -43,13 +48,13 @@ body {
 
 .navBar a {
     text-decoration: none;
-    color: #fff;
+    color: var(--white-color);
     padding: 10px;
     font-size: 1.2rem;
 }
 
 .link-hover:hover, .active {
-    background-color: #d5213a;
+    background-color: var(--red-color);
     border-radius: 5px;
 }
 
@@ -64,7 +69,7 @@ body {
 
 .hero {
     align-items: center;
-    height: 75vh;
+    height: 90vh;
 }
 
 .hero-title {
@@ -80,7 +85,7 @@ body {
 }
 
 .hero-parap1 span {
-    color: #d5213a;
+    color: var(--red-color);
 }
 
 .hero-parap2 {
@@ -94,8 +99,43 @@ body {
 
 .hero-txtY {
     font-size: 2rem;
-    color: #d5213a;
+    color: var(--red-color);
     transform: rotate(90deg);
+}
+
+.intro-section {
+    width: 100%;
+    background-color: var(--violet-color);
+    padding: 30px;
+}
+
+i {
+    font-size: 3rem;
+    color: var(--red-color);
+}
+
+.box {
+    width: 200px;
+    text-align: center;
+    border: 4px dotted var(--red-color);
+    padding: 30px;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+}
+
+.flex-box {
+    justify-content: center;
+    gap: 40px;
+}
+
+.work-section {
+    padding: 30px;
+}
+
+.section-title {
+    text-align: center;
+    padding: 40px;
+    font-size: 2.5rem;
 }
 
 
