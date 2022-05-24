@@ -5,89 +5,70 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
-  <title>Portfolio-Personal</title>
+  <title>Portfolio-Justin</title>
 </head>
 <body>
-  <!-- Header -->
-  <header class="header">
-    <div class="logo">
-      <img src="/img/logo.png" alt="" class="img-logo">
-      <h1 class="txtLogo">Justin</h1>
+  <header class="header flex">
+    <div class="group-logo flex">
+      <img class="logo" src="/img/logo.png" alt="">
+      <h1 class="title">Justin</h1>
     </div>
-    <input type="checkbox" id="btn-menu">
-    <label for="btn-menu"><i class="bi bi-three-dots"></i>
-    </label>
+    <input type="checkbox" id="btn-menu" class="btn-menu">
+    <label for="btn-menu"><i class="bi bi-list"></i></label>
     <nav class="navBar">
       <ul>
-        <li>
-          <a href="#" class="link-hover">Sobre mi</a>
-        </li>
-        <li>
-          <a href="#" class="link-hover">Servicio</a>
-        </li>
-        <li>
-          <a href="#" class="link-hover">Portfolio</a>
-        </li>
-        <li>
-          <a href="#" class="link-hover">Contacto</a>
-        </li>
-        <li>
-          <a href="#" class="link-hover active">Download CV</a>
-        </li>
+        <li><a href="#" class="nav-link">Servicio</a></li>
+        <li><a href="#" class="nav-link">Sobre mi</a></li>
+        <li><a href="#" class="nav-link">Portfolio</a></li>
+        <li><a href="#" class="nav-link">Contacto</a></li>
+        <li><a href="#" class="nav-link active">Descargar CV</a></li>
       </ul>
     </nav>
   </header>
-  <!-- Fin Header -->
-
-  <main class="main-container">
-    <!-- Hero Section -->
-    <section class="hero container">
-      <div class="hero-txt">
-        <h2 class="hero-title">Hola soy</h2>
-        <p class="hero-parap1">FullStack <span>WEB</span> Developer</p>
-        <p class="hero-parap2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam enim soluta dicta, officia tempora sed, iste possimus provident placeat voluptatum culpa. Iusto neque esse, voluptatum optio voluptate in corporis sunt.</p>
+  <main class="main">
+    <section class="hero flex">
+      <div>
+        <span class="hi">Hola soy</span>
+        <h2 class="hero-title">FullStack<span> WEB </span>Developer</h2>
+        <p class="parra">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, voluptatibus, ullam eligendi, non laborum placeat vitae alias at repellat autem vero vel totam eius quod voluptatem! Harum atque quaerat laboriosam.</p>
       </div>
-      <div class="hero-img">
-        <img src="" alt="">
-      </div>
+      <img src="/img/pc.png" alt="" class="hero-img">
     </section>
-    <!-- Hero Section -->
-    <section class="intro-section">
-      <h2 class="section-title">Nuestras Ventajas</h2>
-      <div class="container flex-box">
+    <section class="ventajas">
+      <h2 class="ventajas-title">Mis Ventajas</h2>
+      <div class="boxes">
         <div class="box">
-          <i class="bi bi-check-circle-fill"></i>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="box">
-          <i class="bi bi-file-earmark-code-fill"></i>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="box">
-          <i class="bi bi-bell-fill"></i>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-        </div>
-      </div>
-    </section>
-    <section class="work-section">
-      <h2 class="section-title">Como trabajo?</h2>
-      <div class="container flex-box">
-        <div class="box">
-          <i class="bi bi-currency-exchange"></i>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="box">
-          <i class="bi bi-speedometer2"></i>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="box">
-          <i class="bi bi-arrow-left-right"></i>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          <i class="bi bi-alarm"></i>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
         <div class="box">
           <i class="bi bi-bar-chart-fill"></i>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="box">
+          <i class="bi bi-check-circle-fill"></i>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+    </section>
+    <section class="work">
+      <h2 class="work-title">Como trabajo</h2>
+      <div class="boxes">
+        <div class="box">
+          <i class="bi bi-code-square"></i>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="box">
+          <i class="bi bi-currency-exchange"></i>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="box">
+          <i class="bi bi-arrow-left-right"></i>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="box">
+          <i class="bi bi-activity"></i>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
       </div>
     </section>
