@@ -6,6 +6,7 @@
     --white-color: #fff;
     --violet-color: #2a2344;
 }
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -13,53 +14,54 @@
     font-family: 'Nunito Sans', sans-serif;
 }
 
+body {
+    color: var(--white-color);
+    background-color: var(--bg-color);
+}
+
 .flex {
     display: flex;
 }
 
 .header {
-    background-color: var(--bg-color);
-    color: var(--white-color);
-    padding: 10px 20px;
+    top: 0;
     position: fixed;
     justify-content: space-between;
-    width: 100%;
-    margin: 0 auto;
     align-items: center;
+    padding: 10px;
+    width: 100%;
     z-index: 1;
+    background-color: #19142a;
+}
+
+.header input {
+    display: none;
 }
 
 .group-logo {
-    justify-content: center;
     align-items: center;
 }
 
 .logo {
-    max-width: 70px;
+    max-width: 50px;
     width: 100%;
-}
-
-.bi {
-    font-size: 32px;
 }
 
 .navBar {
     position: absolute;
-    top: 90px;
-    left: 0;
-    width: 100%;
-    background-color: var(--violet-color);
-    padding: 0;
-    margin-left: -200%;
-    list-style: none;
     text-align: center;
+    background-color: var(--violet-color);
+    left: 0;
+    margin-left: -200%;
+    top: 70px;
+    width: 100%;
+    font-size: 1.3rem;
     transition: all .6s linear;
 }
 
 .navBar li {
-    padding: 20px 0;
+    padding: 15px 0;
     width: 100%;
-    list-style: none;
 }
 
 .navBar li:hover {
@@ -67,10 +69,10 @@
     cursor: pointer;
 }
 
-.nav-link {
+.navBar a {
     text-decoration: none;
+    padding: 10px;
     color: var(--white-color);
-    padding: 10px 20px;
     border-radius: 5px;
 }
 
@@ -78,40 +80,34 @@
     background-color: var(--red-color);
 }
 
-.btn-menu {
-    display: none;
+.bi {
+    font-size: 32px;
 }
 
 .btn-menu:checked ~ .navBar {
     margin-left: 0;
 }
 
-.main {
-    position: relative;
-    top: 90px;
-    color: var(--white-color);
-    background-color: var(--bg-color);
-}
-
 .hero {
-    margin: 0 auto;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 30px;
+    margin: 0 auto;
+    position: relative;
+    top: 90px;
     width: 90%;
-    height: 90vh;
+    height: 750px;
 }
 
 .hi {
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
     background-color: var(--red-color);
 }
 
 .hero-title {
-    font-size: 2.8rem;
     padding: 20px 0;
+    font-size: 2.2rem;
 }
 
 .hero-title span {
@@ -131,26 +127,88 @@
     text-align: center;
 }
 
+.ventajas-title, .work-title {
+    font-size: 1.8rem;
+    padding: 30px 0;
+    background-color: var(--violet-color);
+}
+
 .boxes {
+    padding: 50px 0;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 30px;
-    padding: 40px 0;
+    flex-wrap: wrap;
 }
 
 .box {
-    width: 200px;
-    padding: 20px;
     border: 5px dotted var(--red-color);
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
+    padding: 20px;
+    width: 200px;
 }
 
-.ventajas-title, .work-title {
-    font-size: 2rem;
-    padding: 80px 0;
-    background-color: var(--violet-color);
+@media (min-width:480px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width:768px) {
+    .hero {
+        flex-direction: row;
+        align-items: flex-start;
+        height: 450px;
+    }
+}
+
+@media (min-width:1024px) {
+
+    .header {
+        font-size: 1.8rem;
+    }
+
+    .logo {
+        max-width: 70px;
+    }
+
+    .header label {
+        display: none;
+    }
+
+    .navBar ul {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .navBar li {
+        list-style: none;
+        width: auto;
+        border-radius: 5px;
+    }
+
+    .navBar {
+        font-size: 1.4rem;
+        position: static;
+        background-color: transparent;
+        width: 100%;
+        height: auto;
+    }
+
+    .hero {
+        top: 130px;
+        height: 100vh;
+    }
+
+    .hero-img {
+        max-width: 100%;
+    }
+
+    .hero-title {
+        font-size: 5rem;
+    }
 }
 
 
