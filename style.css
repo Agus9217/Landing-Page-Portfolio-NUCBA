@@ -89,15 +89,20 @@ body {
     margin-left: 0;
 }
 
+.fake-div {
+    width: 100%;
+    height: 90px;
+}
+
 .hero {
     flex-direction: column;
     align-items: center;
     gap: 30px;
     margin: 0 auto;
-    position: relative;
-    top: 90px;
     width: 90%;
     height: 750px;
+    animation-duration: 1s;
+    animation-name: slidein;
 }
 
 .hi {
@@ -109,6 +114,7 @@ body {
 .hero-title {
     padding: 20px 0;
     font-size: 2.2rem;
+    
 }
 
 .hero-title span {
@@ -129,9 +135,8 @@ body {
 }
 
 .ventajas-title, .work-title {
-    font-size: 1.8rem;
+    font-size: 2.8rem;
     padding: 30px 0;
-    background-color: var(--violet-color);
 }
 
 .boxes {
@@ -148,7 +153,27 @@ body {
     border-bottom-left-radius: 50px;
     padding: 20px;
     width: 200px;
+    cursor: pointer;
 }
+
+.box:hover {
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 
 @media (min-width:480px) {
     .hero-title {
@@ -198,13 +223,14 @@ body {
         height: auto;
     }
 
-    .hero {
-        top: 130px;
-        height: 100vh;
+    .fake-div {
+        width: 100%;
+        height: 25vh;
     }
 
     .hero-img {
         max-width: 100%;
+        width: 100%;
     }
 
     .hero-title {
